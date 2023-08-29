@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: -140px;
+  width: 100%;
+  height: 900%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 450px;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#register-form {
+  display: none;
+}
+
+.toggle-form {
+  margin-top: 10px;
+}
+
+.toggle-form a {
+  color: #80c9c3;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: #80c9c3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #4b8b84;
+}
+.underline-border{
+  border-bottom: #81C1C2 solid 5px;
+  width: 50px;
+  position: relative;
+  left: 43%;
+  border-radius: 20px;
+  margin-top: 2px;
+}
+.underline-border-register{
+  border-bottom: #81C1C2 solid 5px;
+  width: 80px;
+  position: relative;
+  left: 39%;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.title-model {
+  font-size: 30px;
+  font-weight: bold;
+  color: #81C1C2;
+}
+#login-form{
+  padding:15px;
+}
+#register-form{
+  padding:15px;
+}
+#top-input-login{
+  padding-top: 15px;
+}
+#top-input-register{
+  padding-top: 15px;
+}
+.input-title{
+  margin: 20px 0 20px 0;
+}
+.input-title-register{
+  margin: 10px 0 10px 0;
+}
+form label {
+  font-weight: bold;
+  color: black;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input[type="text"],
+.input-wrapper input[type="password"] {
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 43%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+
+
+
+

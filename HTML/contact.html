@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="..//CSS/header.css">
+    <script src="../JS/contact.js"></script>
+    <script src="../JS/login.js"></script>
+    <script src="../lib/core/fontawesome.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../CSS/cartIconClick.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <div class="logo">
+                <a ><img src="../img/logofinal.png" alt="logo"></a>
+            </div>
+            <div class="list">
+                <ul class="menu">
+                    <li><a class="menu-item" onclick="linkToKinhPage('Home')">Home</a></li>
+                    <li><a class="menu-item" onclick="linkToKinhPage('kinh-gong', 'kinh-can')">Eyeglasses</a></li>
+                    <li><a class="menu-item" onclick="linkToKinhPage('kinh-gong', 'kinh-ram')">Sunglasses</a></li>
+                    <li><a class="menu-item" onclick="linkToKinhPage('kinh-ap-trong', 'kinh-ap-trong')">Lenses</a></li>
+                    <li class="menu-item-has-children">
+                        <a>Brands</a>
+                        <ul class="submenu">
+                            <li><a class="menu-item" onclick="linkToKinhPage('kinh-gong', undefined, 'Burberry')">BURBERRY</a></li>
+                            <li><a class="menu-item" onclick="linkToKinhPage('kinh-gong', undefined, 'Rayban')">RAYBAN</a></li>
+                            <li><a class="menu-item" onclick="linkToKinhPage('kinh-ap-trong', undefined, 'Doll Eyes')">DOLL EYES</a></li>
+                            <li><a class="menu-item" onclick="linkToKinhPage('kinh-ap-trong', undefined, 'Caras')">CARAS</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="menu-item-active" onclick="linkToKinhPage('contact')" >Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <a id="form-open" ><i class="fa-solid fa-user"></i></a>
+                <a ><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="../word/PRODUCT INFORMATION.docx" download><i class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--    Modal Box Cart-->
+    <div class="boxModelCart"></div>
+
+    <h1>List Store</h1>
+    <div class="container">
+        <div class="left">
+            <a  onclick="showMap('store-item-map-1')">
+                <div id="store-item-1" class="store-item">
+                    <h2>EYEONIC – 89 TÂN QUÝ </h2>
+                    <p>89 Tân Quý, Tân Phú, Thành phố Hồ Chí Minh</p>
+                    <p> 0965 669 931</p>
+                    <p>08:00 - 22:00</p>
+                    <a class="call-button" href="tel:0965669931">CALL</a>
+                    <a class="call-button" href="mailto:test@gmail.com">SEND EMAIL</a>
+                </div>
+            </a>
+            <a  onclick="showMap('store-item-map-2')">
+                <div id="store-item-2" class="store-item">
+                    <h2>EYEONIC – 75 PHAN ĐĂNG LƯU</h2>
+                    <p>75 Phan Đăng Lưu, Trần Thành Ngọ, Kiến An, Hải Phòng</p>
+                    <p>0965 669 932</p>
+                    <p>08:00 - 22:00</p>
+                    <a class="call-button" href="tel:0965669932">CALL</a>
+                    <a class="call-button" href="mailto:test@gmail.com">SEND EMAIL</a>
+                </div>
+            </a>
+            <a  onclick="showMap('store-item-map-3')">
+                <div id="store-item-3" class="store-item">
+                    <h2>EYEONIC – 5 LẠCH TRAY</h2>
+                    <p>5 Lạch Tray, Lê Lợi, Ngô Quyền, Hải Phòng</p>
+                    <p>0965 669 933</p>
+                    <p>08:00 - 22:00</p>
+                    <a class="call-button" href="tel:0965669933">CALL</a>
+                    <a class="call-button" href="mailto:test@gmail.com">SEND EMAIL</a>
+                </div>
+            </a>
+            <a  onclick="showMap('store-item-map-4')">
+                <div id="store-item-4" class="store-item">
+                    <h2>EYEONIC – 943 GIẢI PHÓNG</h2>
+                    <p>943 Giải Phóng, Giáp Bát, Hoàng Mai, Hà Nội</p>
+                    <p>0965 669 934</p>
+                    <p>08:00 - 22:00</p>
+                    <a class="call-button" href="tel:0965669934">CALL</a>
+                    <a class="call-button" href="mailto:test@gmail.com">SEND EMAIL</a>
+                </div>
+            </a>
+            <a  onclick="showMap('store-item-map-5')">
+                <div id="store-item-5" class="store-item">
+                    <h2>EYEONIC – 9 TÔN THẤT THUYẾT </h2>
+                    <p>9 Tôn Thất Thuyết, Mỹ Đình, Cầu Giấy, Hà Nội</p>
+                    <p>0965 669 935</p>
+                    <p>08:00 - 22:00</p>
+                    <a class="call-button" href="tel:0965669935">CALL</a>
+                    <a class="call-button" href="mailto:test@gmail.com">SEND EMAIL</a>
+                </div>
+            </a>
+        </div>
+        <div class="right">
+            <div class="map-container">
+                <iframe id="store-item-map-1"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1920073767587!2d106.6174082748692!3d10.796601458821613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bf9abeed34d%3A0x93b3cf64cfd6e365!2zODkgVMOibiBRdcO9LCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1685938920141!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="store-item-map-2"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.677705142635!2d106.62115597504325!3d20.804322795449774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a772de4c5be81%3A0xbed3d7236a6a029f!2zNzUgUGhhbiDEkMSDbmcgTMawdSwgVHLhuqduIFRow6BuaCBOZ-G7jSwgS2nhur9uIEFuLCBI4bqjaSBQaMOybmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1685938853802!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="store-item-map-3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.499744513479!2d106.68414807504435!3d20.851897993830054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a8de98bd1a9%3A0x57d07a7cd4df63ad!2zNSBM4bqhY2ggVHJheSwgTMOqIEzhu6NpLCBOZ8O0IFF1eeG7gW4sIEjhuqNpIFBow7JuZywgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1685938695557!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="store-item-map-4"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.295019092447!2d105.8385080750475!3d20.98080798942422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac434a08d6c3%3A0xbfefcb5ee4e821c8!2zOTQzIEdp4bqjaSBQaMOzbmcsIEdpw6FwIELDoXQsIEhvw6BuZyBNYWksIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1685938628047!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe id="store-item-map-5"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.097318892572!2d105.78068857484898!3d21.028791687778213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4d2197f08d%3A0x65cb50f4a6aea5a9!2zOSBUw7RuIFRo4bqldCBUaHV54bq_dCwgTeG7uSDEkMOsbmgsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1685936151471!5m2!1svi!2s"
+                    frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Products</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-can')">Eyeglasses</a></li>
+                                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-ram')">Sunglasses</a></li>
+                                <li><a onclick="linkToKinhPage('kinh-ap-trong', 'kinh-ap-trong')">Contact Lenses</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Purchasing Policies</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <a>
+                                        <span>Payment Modes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Online shopping policíe</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Contact Information</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <span>Phone: 1900 XXXX</span>
+                                </li>
+                                <li>
+                                    <span>Email: marketing@eyeonic.com</span>
+                                </li>
+                                <li>
+                                    <span>Website: eyeonic.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">About Us</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <span>Tax: 0108195925</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="after-footer">
+        <div class="footer-container">
+            <div>
+                <div class="after-footer-group-header">
+                    <span class="footer-group-title">© 2023 EYEONIC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- start login, register form -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-btn">&times;</span>
+            <div id="login-form">
+                <h2 class="title-model">Login</h2>
+                <div class="underline-border"></div>
+                <form id="loginForm">
+                    <label class="input-title" id="top-input-login" for="login-username">Phone number or Email:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="login-username" name="login-username">
+                    </div>
+                    <span class="error-message" id="login-username-error"></span>
+                    <label class="input-title" for="login-password">Password:</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="login-password" name="login-password" >
+                        <span class="toggle-password" onclick="togglePassword('login-password')">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+                    </div>
+                    <span class="error-message" id="login-password-error"></span>
+                    <br><br>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="toggle-form">Don't have an account? <a href="#" id="register-link">Register now!</a></p>
+            </div>
+
+            <div id="register-form">
+                <h2 class="title-model">Register</h2>
+                <div class="underline-border-register"></div>
+                <form id="registerForm">
+                    <label class="input-title-register" id="top-input-register" for="register-fullname">Full Name:</label>
+                    <input type="text" id="register-fullname" name="register-fullname">
+                    <span class="error-message" id="register-fullname-error"></span>
+                    <label class="input-title-register" for="register-username">Phone number or Email:</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="register-username" name="register-username" >
+                    </div>
+                    <span class="error-message" id="register-username-error"></span>
+                    <label class="input-title-register" for="register-password">Password:</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="register-password" name="register-password" >
+                        <span class="toggle-password" onclick="togglePassword('register-password')">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+                    </div>
+                    <span class="error-message" id="register-password-error"></span>
+                    <label class="input-title-register" for="confirm-password">Confirm Password:</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password">
+                        <span class="toggle-password" onclick="togglePassword('confirm-password')">
+            <i class="fa-solid fa-eye"></i>
+          </span>
+                    </div>
+                    <span class="error-message" id="confirm-password-error"></span>
+                    <button type="submit">Register</button>
+                </form>
+                <p class="toggle-form">Already have an account? <a href="#" id="login-link">Login now!</a></p>
+            </div>
+        </div>
+    </div>
+  <!-- end login, register form -->
+    <script src="../JS/cartIconClick.js"></script>
+</body>
+
+</html>

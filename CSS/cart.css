@@ -1,0 +1,290 @@
+* {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer {
+    height: 200px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    margin-top: 24px;
+}
+
+.nav-bar {
+    height: 70px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+#myForm {
+    border-top: 1px solid #ccc;
+}
+
+.payment__container {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 40px;
+}
+
+.alert {
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+
+.payment__container .invoice, .payment__container .cus__info {
+    width: 48%;
+    display: inline-block;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+
+.placeholder {
+    display: none;
+}
+
+/* Tạo màu nhạt hơn cho option "Select Your City" */
+option.default {
+    color: #cbcaca;
+}
+
+.cus__info h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cus__info input, .cus__info select {
+    display: block;
+    width: 100%;
+    padding: 4px;
+    margin-top: 12px;
+    font-size: 16px;
+    border-radius: 12px 12px 0 0;
+    border: none;
+}
+
+.cus__info input {
+    border-radius: 12px;
+}
+
+input#phoneNumber[type="number"]::-webkit-inner-spin-button,
+input#phoneNumber[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cus__info .detail__address {
+    border-radius: 12px;
+}
+
+.cus__info input:focus-visible, .cus__info select:focus-visible {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea {
+    padding: 12px;
+    border-radius: 16px;
+    margin-top: 12px;
+    width: 95%;
+}
+
+/*Invoice-----------------------------*/
+.invoice .inv__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.code_number {
+    font-size: 16px;
+    color: #b9b9b9;
+    padding-left: 16px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.coupon__input {
+    margin-top: 12px;
+    display: flex;
+    line-height: 28px;
+}
+
+.coupon__input .coupon {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 12px;
+    margin-left: 20px;
+    padding: 8px 8px;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+}
+
+.coupon__input button {
+    width: 150px;
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    background-image: -webkit-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -moz-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -o-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.coupon__input button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transition: transform 0.2s ease-in-out;
+}
+
+table {
+    width: 100%;
+    margin-top: 12px;
+}
+
+table tr {
+    margin: 12px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+table td, table th {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+table td {
+    font-size: 20px;
+}
+
+tr.product__container {
+    margin-top: 20px;
+}
+
+.product__container + .product__container {
+    margin-top: 8px;
+}
+
+table .subtotal {
+    padding: 20px 0;
+    margin: 20px 0 0;
+    border-top: 1px dotted #cccccc;
+}
+
+table .discounted__amount {
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #969696;
+}
+
+.inv__img-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: brightness(0.9);
+}
+
+.product__container span {
+    align-self: center;
+    font-size: 16px;
+    padding-left: 12px;
+    color: #777777;
+}
+
+.product__container span + span {
+    padding-left: 0;
+}
+
+span.quantity {
+    color: #000;
+    font-weight: 500;
+}
+
+.payment__container .invoice {
+    align-self: start;
+}
+
+
+/*Payment Method-----------------------------------------*/
+h3.title {
+    margin: 24px 16px 12px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.payment__method {
+    box-sizing: content-box;
+    margin-left: 16px;
+    width: 45%;
+}
+
+
+.checkbox__container {
+    margin-bottom: 12px;
+}
+
+.payment__method input {
+    margin-right: 12px;
+}
+
+.payment__method .policy {
+    text-align: justify;
+    text-indent: 2rem;
+    padding-right: 12px;
+}
+
+.policy a {
+    white-space: nowrap;
+    display: inline;
+    max-width: 100%;
+    text-decoration: none;
+    padding-bottom: 4px;
+}
+
+.payment__method .pm__submit {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 12px;
+    line-height: 36px;
+    font-weight: 500;
+    background-color:  #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    border: none;
+    border-radius: 12px;
+}
+
+.coupon__input .pm__submit {
+    border-radius: 12px;
+    border: 1px solid #dedede;
+    background-image: -webkit-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -moz-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: -o-linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.pm__submit:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

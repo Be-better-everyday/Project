@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+
+.boxModelCart {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1000;
+    transform: translateX(0);
+    transition: width 0.5s ease-in-out;
+    animation: gray 0.5s ease-in-out forwards;
+    color: black;
+    /*filter: brightness(0.9);*/
+}
+
+@keyframes gray {
+    0% {
+        background-color: rgba(0,0,0,0);
+    }
+    100% {
+        background-color: rgba(0,0,0,0.2);
+    }
+}
+
+.hideBox {
+    animation: brighter 0.4s ease-in-out forwards;
+}
+
+@keyframes brighter {
+    0% {
+        background-color: rgba(0,0,0,0.2);
+    }
+    100% {
+        background-color: rgba(0,0,0,0);
+    }
+}
+
+.cart__container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding:20px 20px 30px 40px;
+    box-sizing: border-box;
+    min-height: 200px;
+    height: 100%;
+    width: 350px;
+    max-width: 100%;
+    background-color: rgb(129, 200, 194);
+    z-index: 1000;
+    animation: slideInRight 0.5s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.hide-cart {
+    animation: slideOutRight 0.5s ease-in-out forwards;
+}
+
+.close__btn {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.added__item {
+    font-weight: 300;
+    padding-top: 16px;
+}
+
+.boxModelCart .noItemAlert {
+    display: block;
+    margin-top: 12px;
+}
+
+.allItems__container {
+    max-height: 340px;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.allItems__container ::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+.itemInCart {
+    display: grid;
+    width: 350px;
+    max-width: 100%;
+    height:90px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    grid-template-columns: 25% auto 10%;
+    grid-template-rows: 1fr 1fr;
+    /*grid-column-gap: 8px;*/
+    grid-template-areas:
+	'h1 h2 h4'
+    'h1 h3 h4';
+}
+
+.itemInCart + .itemInCart {
+    margin-top: 20px;
+}
+
+.itemInCart .item1 {
+    grid-area: h1;
+    /*border: 1px solid #ccc;*/
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    filter: brightness(0.9);
+    /*height: 100vh;*/
+}
+
+.itemInCart .delete-btn {
+    cursor: pointer;
+}
+
+.itemInCart .item1 a {
+    width: 100%;
+    height: 100%;
+}
+
+.item1 img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.itemInCart .product__name, .itemInCart .item3 {
+    /*border: 1px solid #ccc;*/
+    padding-left: 8px;
+    font-size: 16px;
+}
+
+.itemInCart .product__name {
+    grid-area: h2;
+    font-weight: 600;
+}
+
+.itemInCart .item3 {
+    grid-area: h3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.itemInCart .item3 .quantity {
+    font-weight: 500;
+}
+.itemInCart .icon__container {
+    grid-area: h4;
+    background-color: #81c8c2;
+    /*border: 1px solid #ccc;*/
+}
+
+.itemInCart .icon__container button{
+    width: 24px;
+    height: 24px;
+    background-color: #81c8c2;
+    border-radius: 999px;
+    border: 1px solid black;
+}
+
+.itemInCart .icon__container i {
+    width: 100%;
+    border-radius: 999px;
+    background-color: #81c8c2;
+}
+
+.cart__container .subtotal {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+
+.payment__btn__container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    /*display: none;*/
+}
+
+.payment__btn__container .payment__btn {
+    padding: 10px 28px;
+    border-radius: 12px;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

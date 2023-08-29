@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Compare Product</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <!--    <link rel="stylesheet" href="../assets/css/reset.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="../lib/core/google-font-poppins.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/core/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../CSS/compare_product.css">
+    <!--Header CSS,JS-->
+    <link rel="stylesheet" href="../CSS/header.css">
+    <script src="../lib/core/fontawesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/cartIconClick.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+        <div class="logo">
+            <a ><img src="../img/logofinal.png" alt="logo"></a>
+        </div>
+        <div class="list">
+            <ul class="menu">
+                <li><a onclick="linkToKinhPage('Home')">Home</a></li>
+                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-can')">Eyeglasses</a></li>
+                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-ram')">Sunglasses</a></li>
+                <li><a onclick="linkToKinhPage('kinh-ap-trong', 'kinh-ap-trong')">Lenses</a></li>
+                <li class="menu-item-has-children">
+                    <a>Brands</a>
+                    <ul class="submenu">
+                        <li><a onclick="linkToKinhPage('kinh-gong', undefined, 'Burberry')">BURBERRY</a></li>
+                        <li><a onclick="linkToKinhPage('kinh-gong', undefined, 'Rayban')">RAYBAN</a></li>
+                        <li><a onclick="linkToKinhPage('kinh-ap-trong', undefined, 'Doll Eyes')">DOLL EYES</a></li>
+                        <li><a onclick="linkToKinhPage('kinh-ap-trong', undefined, 'Caras')">CARAS</a></li>
+                    </ul>
+                </li>
+                <li><a onclick="linkToKinhPage('contact')" >Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <a ><i class="fa-solid fa-user"></i></a>
+            <a ><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../word/PRODUCT INFORMATION.docx" download ><i class="fa-solid fa-download"></i></a>
+        </div>
+    </div>
+    <!--    Modal Box Cart-->
+    <div class="boxModelCart"></div>
+    <!--    End Heading-->
+    <div class="compare__container">
+        <h2>Compare <span class="main__product name">main__product</span> and
+            <span class="compare__product name">compare__product</span>
+        </h2>
+    </div>
+    <table>
+        <tr class="cp_name">
+            <th class="properties"></th>
+            <td class="bold main__product name">main__product</td>
+            <td class="bold compare__product name">compare__product</td>
+        </tr>
+
+        <tr class="cp_img_row">
+            <th class="properties"></th>
+            <td>
+                <div class="slider main__product">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="focus__img main__product thumbnail1"
+                                        src="../img/anh_san_pham/id1-1.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="main__product thumbnail2"
+                                        src="../img/anh_san_pham/id1-2.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="main__product thumbnail3"
+                                        src="../img/anh_san_pham/id1-3.webp"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div thumbsSlider="" class="swiper mySwiper thumbnail_3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="focus__img main__product Thumbnail1"
+                                        src="../img/anh_san_pham/id1-1.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="main__product Thumbnail2"
+                                        src="../img/anh_san_pham/id1-2.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="main__product Thumbnail3"
+                                        src="../img/anh_san_pham/id1-3.webp"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </td>
+
+            <!--Break Line-->
+
+            <td>
+                <div class="slider compare__product">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2A">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="focus__img compare__product thumbnail1"
+                                        src="../img/anh_san_pham/id1-1.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="compare__product thumbnail2"
+                                        src="../img/anh_san_pham/id1-2.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="compare__product thumbnail3"
+                                        src="../img/anh_san_pham/id1-3.webp"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div thumbsSlider="" class="thumbnail_2 swiper mySwiperA">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="focus__img compare__product Thumbnail1"
+                                        src="../img/anh_san_pham/id1-1.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="compare__product Thumbnail2"
+                                        src="../img/anh_san_pham/id1-2.webp"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img_container"><img class="compare__product Thumbnail3"
+                                        src="../img/anh_san_pham/id1-3.webp"
+                                        alt=""></div>
+                            </div>
+                        </div>
+                        <div class="second swiper-button-next"></div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <th class="cp_title" colspan="3">Basic information</th>
+        </tr>
+
+        <tr class="cp_material">
+            <th class="properties">Material</th>
+            <td>
+                <p class="bold main__product material" style="line-height: 32px">Platic</p>
+                <p class="main__product description"></p>
+            </td>
+            <td>
+                <p class="bold compare__product material" style="line-height: 32px">Metal</p>
+                <p class="compare__product description"></p>
+            </td>
+        </tr>
+
+        <tr class="cp_color">
+            <th class="properties">Color</th>
+            <td class="main__product color">Purple, yellow, black, gray</td>
+            <td class="compare__product color">BLue, Moss green</td>
+        </tr>
+
+        <tr class="cp_shape">
+            <th class="properties">Shape (square, clear, oval, cateye,...) </th>
+            <td class="main__product shape">Cateye</td>
+            <td class="compare__product shape">Ovan</td>
+        </tr>
+
+        <tr class="cp_brand">
+            <th class="properties">Brand</th>
+            <td class="bold main__product brand">Ray-ban</td>
+            <td class="bold compare__product brand">Ray-ban</td>
+        </tr>
+
+        <tr class="cp_price">
+            <th class="properties">Price</th>
+            <td>
+                <p class="bold main__product price">380,000₫</p>
+                <p class="bold main__product oldPrice"></p>
+                <span><a href="Detail.html" class="cp_link main__product">More Detail</a></span>
+            </td>
+            <td>
+                <p class="bold compare__product price">350,000₫</p>
+                <p class="bold compare__product oldPrice"></p>
+                <span><a href="Detail.html" class="cp_link compare__product">More Detail</a></span>
+            </td>
+        </tr>
+    </table>
+
+    <div id="footer">
+        <div class="footer-container">
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Products</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-can')">Eyeglasses</a></li>
+                                <li><a onclick="linkToKinhPage('kinh-gong', 'kinh-ram')">Sunglasses</a></li>
+                                <li><a onclick="linkToKinhPage('kinh-ap-trong', 'kinh-ap-trong')">Contact Lenses</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Purchasing Policies</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <a>
+                                        <span>Payment Modes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Online shopping policíe</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">Contact Information</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <span>Phone: 1900 XXXX</span>
+                                </li>
+                                <li>
+                                    <span>Email: marketing@eyeonic.com</span>
+                                </li>
+                                <li>
+                                    <span>Website: eyeonic.com</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-element">
+                <div>
+                    <div class="footer-group-header">
+                        <span class="footer-group-title">About Us</span>
+                    </div>
+                    <div>
+                        <div class="footer-group-header">
+                            <ul class="footer-list-items">
+                                <li>
+                                    <span>Tax: 0108195925</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="after-footer">
+        <div class="footer-container">
+            <div>
+                <div class="after-footer-group-header">
+                    <span class="footer-group-title">© 2023 EYEONIC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/core/swiper-bundle.min.js"></script>
+    <script src="../JS/compare_product_slide.js"></script>
+    <script src="../JS/cartIconClick.js"></script>
+</body>
+
+</html>
